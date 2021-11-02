@@ -122,6 +122,14 @@
 					<nexusUrl>https://oss.sonatype.org/</nexusUrl>
 					<autoReleaseAfterClose>true</autoReleaseAfterClose>
 				</configuration>
+				<dependencies>
+					<!-- TODO Temp solution until fix of nexus-staging-maven-plugin	-->
+					<dependency>
+						<groupId>com.thoughtworks.xstream</groupId>
+						<artifactId>xstream</artifactId>
+						<version>1.4.15</version>
+					</dependency>
+				</dependencies>
 			</plugin>
 		</plugins>
 	</build>
